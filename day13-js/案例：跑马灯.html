@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="txt">
+    欢迎光临！
+</div>
+
+
+<script type="text/javascript">
+    function show() {
+        var tag = document.getElementById("txt");
+        var datastring = tag.innerText;
+
+        var firstchar = datastring[4];
+        var otherstring = datastring.substring(0, 4);
+        var newtext = firstchar + otherstring;
+
+        tag.innerText = newtext;
+
+    }
+
+    setInterval(show, 1000);
+</script>
+</body>
+</html>
